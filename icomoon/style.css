@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?8ye3gf');
+  src:  url('fonts/icomoon.eot?8ye3gf#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8ye3gf') format('truetype'),
+    url('fonts/icomoon.woff?8ye3gf') format('woff'),
+    url('fonts/icomoon.svg?8ye3gf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-quill:before {
+  content: "\7a";
+}
+.icon-pacman:before {
+  content: "\64";
+}
+.icon-books:before {
+  content: "\66";
+}
+.icon-phone:before {
+  content: "\78";
+}
+.icon-compass2:before {
+  content: "\61";
+}
+.icon-bubble:before {
+  content: "\63";
+}
+.icon-lab:before {
+  content: "\73";
+}
+.icon-circle-down:before {
+  content: "\74";
+}
+.icon-facebook2:before {
+  content: "\71";
+}
+.icon-twitter:before {
+  content: "\72";
+}
+.icon-vimeo2:before {
+  content: "\77";
+}
+.icon-tumblr2:before {
+  content: "\65";
+}
+

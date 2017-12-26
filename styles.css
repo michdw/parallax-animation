@@ -1,0 +1,301 @@
+/*imported fonts*/
+
+@font-face {
+  font-family: icons;
+  src: url('icomoon/fonts/icomoon.ttf');
+}
+
+
+/*whole page*/
+
+html, body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  font-size: 100%;
+  font-family: Raleway;
+  color: #fff;
+  position: relative;
+  height: 340vh;
+}
+
+a {
+  color: #fff;
+}
+
+.icons {
+  font-family: icons;
+}
+
+.icons span:hover {
+  cursor: pointer;
+}
+
+/*pictures don't scroll with page*/
+
+.pic {
+  position: relative;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/*sections in between images*/
+
+.solid {
+  z-index: 1;
+  position: relative;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.solid a {
+  font-weight: bold;
+}
+
+.solid * {
+  position: absolute;
+}
+
+.solidA {
+  width: 15vw;
+  top: -.2em;
+  margin-left: 1.5vw;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.solidB {
+  margin-left: 20vw;
+}
+
+.solidC {
+  margin-left: 30vw;
+}
+
+.solidD {
+  margin-left: 60vw;
+}
+
+.solidE {
+  margin-left: 70vw;
+}
+
+
+/*icons in solid color sections*/
+
+.solidB, .solidD {
+  top: 0;
+  font-size: 80px;
+  padding: 20px;
+  opacity: .2;
+}
+
+.solidB:hover, .solidD:hover {
+  cursor: pointer;
+}
+
+.iconPulse {
+  -webkit-animation: pulse 800ms ease;
+  animation: pulse 800ms ease;
+}
+
+.iconFlip {
+  -webkit-animation: flip 500ms;
+  animation: flip 500ms;
+}
+
+.iconBounceDown {
+  -webkit-animation: bounceDown 800ms;
+  animation: bounceDown 800ms;
+}
+
+.iconShake {
+  -webkit-animation: shake 800ms;
+  animation: shake 800ms;
+}
+
+
+/*text next to icons*/
+
+.solidC, .solidE {
+  top: 30%;
+  width: 20vw;
+  line-height: 1.4em;
+  font-size: .95em;
+}
+
+
+/*preloaded images for seamless display when scrolling in Firefox*/
+
+.preload {
+  z-index: 99;
+  width: 100%;
+  position: fixed;
+  top: -29.9vh;
+}
+
+.preload img {
+  max-height: 30vh;
+  width: auto;
+}
+
+
+/*first image*/
+
+.pic1 {
+  z-index: 0;
+  height: 100vh;
+  background-image: url('img/street.jpeg');
+}
+
+.text1 {
+  position: fixed;
+  margin-left: 70vw;
+  margin-top: 25vh;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.text1 h1 {
+  font-size: 3.5em;
+}
+
+.header {
+  z-index: 1;
+  position: fixed;
+  padding: 2.5vw;
+  padding-left: 0;
+  margin-left: 1em;
+  font-size: 1.5em;
+  letter-spacing: .5vw;
+}
+
+.welcome {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  font-size: 6em;
+  margin-top: 12vh;
+}
+
+.downArrow:hover {
+  cursor: pointer;
+}
+
+.solid1 {
+  background: #c22222;
+}
+
+
+/*second image*/
+
+.pic2 {
+  z-index: -1;
+  height: 60vh;
+  background-image: url('img/users.jpeg');
+}
+
+.text2a {
+  position: fixed;
+  top: 0;
+  font-size: 10em;
+}
+
+.text2b {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2em;
+  padding-right: 1vw;
+}
+
+.solid2 {
+  background: #78a200;
+}
+
+
+/*third image*/
+
+.pic3 {
+  z-index: -1;
+  height: 90vh;
+  background-image: url('img/plant.jpeg');
+}
+
+.text3a {
+  position: fixed;
+  margin: 611vh 0 0 5vw;
+  font-size: 7em;
+}
+
+.text3b {
+  position: absolute;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 40vh 0 0 10vw;
+}
+
+
+/*bottom of page*/
+
+.solid3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 10vh;
+  background: #333;
+  font-size: 1.2em;
+  overflow: hidden;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.upArrow {
+  position: absolute;
+  right: 6vw;
+}
+
+.upArrow span {
+  transform: rotate(180deg);
+}
+
+.solid3 span:hover, .solid3 p:hover {
+  cursor: pointer;
+}
+
+.solid3 .icons {
+  margin-left: 6vw;
+}
+
+.solid3 p {
+  margin-left: 1.5vw;
+}
