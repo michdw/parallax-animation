@@ -24,7 +24,7 @@ $(document).ready(function() {
     $('.solid2 .solidD').removeClass('iconShake');
   });
 
-// scrolling:
+  // scrolling:
   $('.downArrow').on('click', function() {
     $('html, body').animate({
       scrollTop: 20
@@ -34,14 +34,16 @@ $(document).ready(function() {
   $(window).on('scroll', function() {
     var scrolled = $(window).scrollTop();
 
+    // parallax effect:
+    $('.text1').css('top', 0 - (scrolled * 5) + 'px');
+    $('.text3a').css('top', 0 - (scrolled * 2.5) + 'px');
+
+    // show, hide text based on scroll position:
     if (scrolled > 12) {
       $('.welcome').fadeOut(250);
     } else {
       $('.welcome').fadeIn(250);
     }
-
-    $('.text1').css('top', 0 - (scrolled * 5) + 'px');
-    $('.text3a').css('top', 0 - (scrolled * 2.5) + 'px');
 
     if (scrolled >= ($('.pic2').position().top) - 120) {
       $('.text2b').fadeOut(250);
@@ -55,6 +57,7 @@ $(document).ready(function() {
       $('.text3b').fadeOut(250);
     }
 
+    // animations on bottom of page:
     if (scrolled + $(window).height() >= $(document).height() - 12) {
       $('.footer:first-child').addClass('bounce1');
       $('.footer:nth-child(2)').addClass('bounce2');
