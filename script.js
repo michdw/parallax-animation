@@ -1,6 +1,9 @@
 $(document).ready(function() {
   $('.text3b').hide();
   $('.preload').fadeOut();
+  setTimeout(function() {
+    $("html, body").animate({ scrollTop: 12 }, 750);
+  }, 150);
 
   // animate icons on hover:
   $('.solid1 .solidC a, .solid1 .solidB').hover(function() {
